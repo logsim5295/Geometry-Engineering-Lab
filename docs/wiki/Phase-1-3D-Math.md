@@ -48,4 +48,4 @@
 
 기존 `01-3D-Math/01-Primitives`, `01-3D-Math/02-Vector`를 유지한다. 좌표계·행렬·변환 하위 폴더는 해당 실습을 시작할 때만 추가한다. OCCT 실습 코드는 향후 `03-OpenCascade`에 두고 중복 구현을 피한다. 현재 OCCT 환경/래퍼 버전은 확인되지 않았다.
 
-[진행 현황](Progress.md)을 따르며 회전 이후는 미착수다. [참고 자료](References.md)의 **KOCW 선형대수학**, **3Blue1Brown**, **OCCT gp_Trsf / Modeling Data**를 해당 주제만 골라 읽는다.
+2026-10-27에 원점/임의 위치 Z축 회전, 변환 순서·역변환까지 개념과 손계산을 진행했다. 다음 대화는 내적 첫 문제이며, 코드 실행·OCCT 비교 및 미확인 개념은 남아 있다. 세부 상태와 공통 학습 대응은 [진행 현황](Progress.md)을 따른다. [참고 자료](References.md)의 **KOCW 선형대수학**, **3Blue1Brown**, **OCCT gp_Trsf / Modeling Data**를 해당 주제만 골라 읽는다.
