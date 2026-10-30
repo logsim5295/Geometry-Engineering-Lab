@@ -4,7 +4,7 @@ C#과 OpenCascade로 수학·계산 기하·CAD 커널·최적화를 직접 구�
 
 **[학습 Wiki Home](docs/wiki/Home.md)** · [학습 진행도·체크리스트](docs/wiki/Progress.md) · [다음 4주 계획](docs/wiki/Next-4-Weeks.md)
 
-현재는 **Phase 1 · 3D Math**를 학습 중입니다. 2026-10-29 학습자가 기존 C# 점·벡터 연산과 정규화·영벡터 정책을 직접 실행하고 평행이동을 계산했습니다. 다음은 [실습 01](docs/wiki/Lab-01-Point-and-Vector.md)의 점−벡터 실행과 OCCT 이동 코드 확인입니다. 상세 상태는 [진행도](docs/wiki/Progress.md)에 기록했습니다.
+현재는 **Phase 1 · 3D Math**를 학습 중입니다. 2026-10-30 점−벡터와 내적·각도·영벡터 예외를 직접 실행해 확인했습니다. 다음은 [실습 04](docs/wiki/Lab-04-Dot-and-Cross.md)의 외적 첫 방향 질문입니다. 상세 상태와 남은 OCCT 검증은 [진행도](docs/wiki/Progress.md)에 기록했습니다.
 
 기존 `01-3D-Math` 코드와 `3D-Engineering-Study.slnx` 구조를 유지합니다. 나머지 Phase 폴더는 해당 학습을 시작할 때 추가합니다.
 
