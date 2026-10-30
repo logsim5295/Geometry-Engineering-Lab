@@ -7,9 +7,13 @@ var displacement = b - a;
 var moved = a + displacement;
 var unit = displacement.Normalized();
 var zero = new Vector2D(0, 0).Normalized();
+var returned = b - displacement;
 
 Console.WriteLine($"B - A = ({displacement.X}, {displacement.Y})");
 Console.WriteLine($"이동 벡터의 길이 = {displacement.Length()}");
 Console.WriteLine($"A + (B - A) = ({moved.X}, {moved.Y})");
 Console.WriteLine($"정규화 = ({unit.X}, {unit.Y}), 길이 = {unit.Length()}");
 Console.WriteLine($"영벡터 정규화 = ({zero.X}, {zero.Y}), 길이 = {zero.Length()}");
+Console.WriteLine($"B - v = ({returned.X}, {returned.Y})");
+Console.WriteLine($"원래 점 A와 같은가? {returned == a}");
+Console.WriteLine($"결과 타입: {returned.GetType().Name}");
