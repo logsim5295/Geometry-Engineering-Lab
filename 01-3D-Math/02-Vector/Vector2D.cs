@@ -89,6 +89,13 @@ namespace _01_3D_Math
         /// <returns></returns>
         public static double Dot(Vector2D v1, Vector2D v2) => v1.X * v2.X + v1.Y * v2.Y;
 
+        /// <summary>
+        /// 벡터 외적
+        /// </summary>
+        /// <param name="v1">벡터1</param>
+        /// <param name="v2">벡터2</param>
+        /// <returns></returns>
+        public static double Cross(Vector2D v1, Vector2D v2) => v1.X * v2.Y - v1.Y * v2.X;
         #endregion
     }
 }
