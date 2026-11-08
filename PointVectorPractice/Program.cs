@@ -1,4 +1,4 @@
-﻿using _01_3D_Math;
+using _01_3D_Math;
 using _01_3D_Math._02_Vector;
 
 // [2D 벡터 테스트] *********************************************************************
@@ -66,28 +66,108 @@ using _01_3D_Math._02_Vector;
 // ***************************************************************************************
 
 // [3D 벡터 테스트] *********************************************************************
-var a = new Vector3D(1, 2, 3);
-var b = new Vector3D(4, 5, 6);
-var cross = Vector3D.Cross(a, b);
+//var a = new Vector3D(1, 2, 3);
+//var b = new Vector3D(4, 5, 6);
+//var cross = Vector3D.Cross(a, b);
 
-Console.WriteLine($"외적: {cross}");
-Console.WriteLine($"a와 내적: {Vector3D.Dot(cross, a)}");
-Console.WriteLine($"b와 내적: {Vector3D.Dot(cross, b)}");
-Console.WriteLine($"역순 외적: {Vector3D.Cross(b, a)}");
+//Console.WriteLine($"외적: {cross}");
+//Console.WriteLine($"a와 내적: {Vector3D.Dot(cross, a)}");
+//Console.WriteLine($"b와 내적: {Vector3D.Dot(cross, b)}");
+//Console.WriteLine($"역순 외적: {Vector3D.Cross(b, a)}");
 
-var parallel = new Vector3D(2, 4, 6);
-var opposite = new Vector3D(-1, -2, -3);
+//var parallel = new Vector3D(2, 4, 6);
+//var opposite = new Vector3D(-1, -2, -3);
 
-Console.WriteLine($"같은 방향: {Vector3D.Cross(a, parallel)}");
-Console.WriteLine($"반대 방향: {Vector3D.Cross(a, opposite)}");
+//Console.WriteLine($"같은 방향: {Vector3D.Cross(a, parallel)}");
+//Console.WriteLine($"반대 방향: {Vector3D.Cross(a, opposite)}");
 
-double area = cross.Length() / 2.0;
-Console.WriteLine($"삼각형 넓이: {area}");
+//double area = cross.Length() / 2.0;
+//Console.WriteLine($"삼각형 넓이: {area}");
 
-var parallelCross = Vector3D.Cross(
-    new Vector3D(2, 0, 0),
-    new Vector3D(4, 0, 0));
+//var parallelCross = Vector3D.Cross(
+//    new Vector3D(2, 0, 0),
+//    new Vector3D(4, 0, 0));
 
-Console.WriteLine($"외적: {parallelCross}");
-Console.WriteLine($"삼각형 넓이: {parallelCross.Length() / 2.0}");
+//Console.WriteLine($"외적: {parallelCross}");
+//Console.WriteLine($"삼각형 넓이: {parallelCross.Length() / 2.0}");
+// ***************************************************************************************
+
+// [3D 벡터 Normal 테스트] ****************************************************************
+//Vector3D a = new(2, 0, 0);
+//Vector3D b = new(0, 3, 0);
+
+//Console.WriteLine($"UnitNormal(a,b): {Vector3D.UnitNormal(a, b)}");
+//Console.WriteLine($"UnitNormal(a,b) 길이: {Vector3D.UnitNormal(a, b).Length()}");
+//Console.WriteLine($"역순 단위 법선: {Vector3D.UnitNormal(b, a)}");
+//Console.WriteLine($"UnitNormal(b,a) 길이: {Vector3D.UnitNormal(b, a).Length()}");
+
+//Vector3D c = new(2, 0, 0);
+//Vector3D d = new(4, 0, 0);
+//try
+//{
+//    Console.WriteLine($"UnitNormal(c,d): {Vector3D.UnitNormal(c, d)}");
+//}
+//catch (ArgumentException ex)
+//{
+//    Console.WriteLine($"단위 법선 계산 실패: {ex.Message}");
+//}
+// ***************************************************************************************
+
+// [반평행 & 영벡터 테스트] ****************************************************************
+//Vector3D a = new(2, 0, 0);
+//Vector3D[] testVectors =
+//[
+//    new(-4, 0, 0),  // a=(2,0,0)과 반대 방향
+//    new(0, 0, 0)    // 방향이 없는 영벡터
+//];
+
+//foreach (var v in testVectors)
+//{
+//    try
+//    {
+//        Console.WriteLine($"입력 {v} → {Vector3D.UnitNormal(a, v)}");
+//    }
+//    catch (ArgumentException ex)
+//    {
+//        Console.WriteLine($"입력 {v} → {ex.Message}");
+//    }
+//}
+// ***************************************************************************************
+
+// [거의 평행한 벡터 테스트] ***************************************************************
+
+Vector3D a = new(2, 0, 0);
+Vector3D b = new(0, 3, 0);
+Vector3D nearA = new(1, 0, 0);
+Vector3D nearB = new(1, 1e-12, 0);
+
+Console.WriteLine($"외적: {Vector3D.Cross(a, b)}");
+Console.WriteLine($"외적 길이: {Vector3D.Cross(a, b).Length()}");
+Console.WriteLine($"단위 법선: {Vector3D.UnitNormal(a, b)}");
+
+try
+{
+    Console.WriteLine($"외적: {Vector3D.Cross(nearA, nearB)}");
+    Console.WriteLine($"외적 길이: {Vector3D.Cross(nearA, nearB).Length()}");
+    Console.WriteLine($"단위 법선: {Vector3D.UnitNormal(nearA, nearB)}");
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine(ex.Message);
+}
+
+Vector3D scaledA = new(1e6, 0, 0);
+Vector3D scaledB = new(1e6, 1e-6, 0);
+
+Console.WriteLine(
+    $"원본 외적 길이: {Vector3D.Cross(scaledA, scaledB).Length()}");
+
+try
+{
+    Console.WriteLine(Vector3D.UnitNormal(scaledA, scaledB));
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine(ex.Message);
+}
 // ***************************************************************************************
