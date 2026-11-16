@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Test/">
+    <Project Path="Coordinate/Coordinate.csproj" Id="e6d0e062-e1fa-4353-8bc6-21a8baf55bbe" />
     <Project Path="PointVectorPractice/PointVectorPractice.csproj" />
   </Folder>
   <Project Path="01-3D-Math/01-3D-Math.csproj" />

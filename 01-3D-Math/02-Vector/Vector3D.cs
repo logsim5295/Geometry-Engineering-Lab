@@ -83,6 +83,9 @@ namespace _01_3D_Math._02_Vector
 
             return new(cross.X / sinAngle, cross.Y / sinAngle, cross.Z / sinAngle);
         }
+
+        public double LengthSquared() => Dot(this, this);
+
         #endregion
     }
 }

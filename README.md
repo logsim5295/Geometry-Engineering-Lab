@@ -4,7 +4,7 @@ C#과 OpenCascade로 수학·계산 기하·CAD 커널·최적화를 직접 구�
 
 **[학습 Wiki Home](docs/wiki/Home.md)** · [학습 진행도·체크리스트](docs/wiki/Progress.md) · [다음 4주 계획](docs/wiki/Next-4-Weeks.md)
 
-현재는 **Phase 1 · 3D Math**를 학습 중입니다. 2026-11-08 P1-11 외적·단위 법선의 정상값·예외·허용오차 검증을 마쳤습니다. 정규화와 단위 법선의 차이도 복습했습니다. 다음은 World/Local 좌표계의 원점 차이와 로컬→월드 첫 계산입니다. [오늘의 학습 기록](docs/wiki/Study-2026-11-08.md)과 [진행도](docs/wiki/Progress.md)를 참고하세요.
+현재는 **Phase 1 · 3D Math**를 학습 중입니다. 2026-11-16 단위축·내적 좌표 변환 손계산과 Point3D 기반 월드→로컬 C# 실행을 확인했습니다. P1-12는 진행 중이며 다음은 ToWorld 구현과 왕복 오차 검증입니다. [학습 기록](docs/wiki/Study-2026-11-16.md)과 [진행도](docs/wiki/Progress.md)를 참고하세요.
 
 기존 `01-3D-Math` 코드와 `3D-Engineering-Study.slnx` 구조를 유지합니다. 나머지 Phase 폴더는 해당 학습을 시작할 때 추가합니다.
 

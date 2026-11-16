@@ -1,5 +1,7 @@
 - [Home](Home.md)
 - [학습 진행도·체크리스트](Progress.md)
+- [11월 16일 · 좌표계 내적 변환과 Point3D](Study-2026-11-16.md)
+- [11월 12~13일 · 좌표계 학습 기록](Study-2026-11-13.md)
 - [11월 8일 · 단위 법선 학습 기록](Study-2026-11-08.md)
 - [다음 4주 계획](Next-4-Weeks.md)
 - [Phase 1 · 3D Math](Phase-1-3D-Math.md)
