@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace _01_3D_Math._02_Vector
+namespace _01_3D_Math
 {
     /// <summary>
     /// 3D 벡터

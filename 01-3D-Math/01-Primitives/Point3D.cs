@@ -1,9 +1,9 @@
-﻿using _01_3D_Math._02_Vector;
+﻿using _01_3D_Math;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace _01_3D_Math._01_Primitives
+namespace _01_3D_Math
 {
     public readonly record struct Point3D(double X, double Y, double Z)
     {
@@ -64,7 +64,6 @@ namespace _01_3D_Math._01_Primitives
         /// <param name="p2">점2</param>
         /// <returns></returns>
         public static double DistanceSquared(Point3D p1, Point3D p2) => (p1 - p2).LengthSquared();
-
         #endregion
     }
 }
