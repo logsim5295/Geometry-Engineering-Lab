@@ -4,7 +4,7 @@ C#과 OpenCascade로 수학·계산 기하·CAD 커널·최적화를 직접 구�
 
 **[학습 Wiki Home](docs/wiki/Home.md)** · [학습 진행도·체크리스트](docs/wiki/Progress.md) · [다음 4주 계획](docs/wiki/Next-4-Weeks.md)
 
-현재는 **Phase 1 · 3D Math**를 학습 중입니다. 2026-11-17 CoordinateSystem3D의 정규직교 검사·양방향 좌표 변환·일반 3D 축 왕복 오차를 검증해 P1-12·13을 완료했습니다(8/66). 다음은 기저축을 열로 배치하는 3×3 행렬 첫 문제입니다. [학습 기록](docs/wiki/Study-2026-11-17.md)과 [진행도](docs/wiki/Progress.md)를 참고하세요.
+현재는 **Phase 1 · 3D Math**를 학습 중입니다. 2026-11-18 행렬 기초, 기저축 열 배치, 행렬×열벡터·좌표 왕복·전치 손계산을 진행했습니다. P1-14는 진행 중이며 완료는 8/66으로 유지합니다. 다음은 단위행렬 I×(2,-3,4) 문제입니다. [학습 기록](docs/wiki/Study-2026-11-18.md)과 [진행도](docs/wiki/Progress.md)를 참고하세요.
 
 기존 `01-3D-Math` 코드와 `3D-Engineering-Study.slnx` 구조를 유지합니다. 나머지 Phase 폴더는 해당 학습을 시작할 때 추가합니다.
 
